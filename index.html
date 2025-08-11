@@ -91,6 +91,8 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <!-- style CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Shine smile</title>
   </head>
   <body>
@@ -175,7 +177,7 @@
               <img
                 src="./assets/img/hero1.png"
                 alt="Our services"
-                class="service__img"
+                class="service__img" data-aos="flip-up" data-aos-anchor=".service__btn"  data-aos-mirror="true"
               />
             </figure>
             <!-- service right -->
@@ -256,7 +258,7 @@
                   </div>
                 </div>
               </section>
-              <a href="#!" class="btn service__btn">All Services</a>
+              <a href="#!" class="btn service__btn" >All Services</a>
             </div>
           </div>
         </div>
@@ -356,7 +358,7 @@
       <section class="team">
         <div class="container">
           <div class="team-header">
-            <h2 class="section-heading">Our virtual dentist</h2>
+            <h2 class="section-heading" data-aos="zoom-in-left">Our virtual dentist</h2>
             <a href="#!" class="btn team__cta">Meet our dentist</a>
           </div>
 
@@ -690,5 +692,10 @@
           </div>
       </div>
      </section>
+     <!-- js animation -->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
   </body>
 </html>
